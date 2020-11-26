@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: #f5f9fc;
+  color: #2f4657;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+a{
+  text-decoration: none;
+  color: #2f4657;}
+
+h1{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: lightgray;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 3rem;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li{
+  display: inline-block;
+}
+
+button{
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #2f4657;
+  color: #f5f9fc;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus{
+    background: #161f2a;
+    color: #f1f1f1;
+}
+
+button:focus{
+    outline: 1px solid #f1f1f1;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.hero-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-box{
+  width: 50%;
+  min-width: 400px;
+  padding-left: 5rem;
+}
+
+.hero-text{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero-box > img{
+  max-width: 100%;
+}
+
+.feature-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5rem 14rem;
+}
