@@ -30,6 +30,7 @@ h1{
 h2{
   font-size: 4rem;
   font-weight: 700;
+  line-height: 4rem;
 }
 
 h3{
@@ -73,7 +74,7 @@ button{
   display: inline-block;
   border: none;
   padding: 0.5rem 2rem;
-  margin: 0;
+  margin: 2rem 0;
   text-decoration: none;
   background: #2f4657;
   color: #f5f9fc;
@@ -102,6 +103,19 @@ button:active {
     transform: scale(0.99);
 }
 
+input{
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  text-decoration: none;
+  background: #e1e9ef;
+  color: black;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.5rem;
+  width: 60%;
+}
+
 .hero-wrapper{
   display: flex;
   align-items: center;
@@ -111,7 +125,7 @@ button:active {
 
 .hero-box{
   width: 50%;
-  min-width: 400px;
+  min-width: 300px;
   padding-left: 5rem;
 }
 
@@ -128,13 +142,26 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 5rem 14rem;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+
+.feature-box{
+  width: 22%;
+  min-width: 150px;
 }
 
 .information{
   background: #fff;
   padding: 5rem 14rem;
   width: 60%;
+}
+
+@media (max-width: 1000px) {
+  h2{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 
 @media (max-width: 800px){
@@ -147,13 +174,20 @@ button:active {
   nav{
     justify-content: center;
   }
-  .hero-box > img {
-    width: 800px;
+  h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .feature-box{
+    width: 100%;
+  }
+  input, .hero-text > button{
+    width: 100%;
   }
 }
 
-@media (max-width: 1000px) {
-  h2{
-    font-size: 3rem;
+@media (max-width: 616px){
+  .hero-box {
+    width: 100%;
   }
 }
