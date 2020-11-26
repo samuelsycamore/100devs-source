@@ -46,12 +46,27 @@ nav{
   padding: 1rem 3rem;
 }
 
+.hamburger{
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+}
+
+.line {
+  background: lightgray;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+
 .nav-links{
   list-style: none;
 }
 
 .nav-links li{
   display: inline-block;
+  margin: auto 2rem;
 }
 
 button{
@@ -114,4 +129,31 @@ button:active {
   align-items: center;
   justify-content: space-around;
   padding: 5rem 14rem;
+}
+
+.information{
+  background: #fff;
+  padding: 5rem 14rem;
+  width: 60%;
+}
+
+@media (max-width: 800px){
+  .hamburger{
+    display: block;
+  }
+  .nav-links, nav > button{
+    display: none;
+  }
+  nav{
+    justify-content: center;
+  }
+  .hero-box > img {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1000px) {
+  h2{
+    font-size: 3rem;
+  }
 }
